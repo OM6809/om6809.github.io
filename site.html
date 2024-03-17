@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title>Firebase_form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <div class="form">
+                <h2>Login Form</h2>
+                <form>
+                    <div class="inputbox">
+                        <input type="text" value="" id="username" required>
+                        <span>username</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" value="" id="email" required>
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" value="" id="phone" required>
+                        <span>Phone Number</span>
+                    <div class="inputbox">
+                        <input type="text" value="" id="enquiry" required>
+                        <span>Phone Number</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" value="" id="source" required>
+                        <span>Phone Number</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" value="" id="news" required>
+                        <span>Phone Number</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" value="" id="message" required>
+                        <span>Phone Number</span>
+                        </div>
+                    <input type="submit" value="submit" class="sub" id="submit">
+                </form>
+            </div>
+        </div>
+        <script type="module">
+               // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+            import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-database.js";
+  
+  // Your web app's Firebase configuration
+            const firebaseConfig = {
+            apiKey: "AIzaSyBHmbWamYbCE0EgAu2xWA_JOhq8CwlHgFA",
+            authDomain: "interior1-ffb87.firebaseapp.com",
+            projectId: "interior1-ffb87",
+            storageBucket: "interior1-ffb87.appspot.com",
+            messagingSenderId: "159544039491",
+            appId: "1:159544039491:web:cdd35ff9785db3b691dcf6",
+            measurementId: "G-WG0G2MS453"
+            };
+        
+
+  // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+
+   //get ref to database services
+             const db = getDatabase(app);
+
+             document.getElementById("submit").addEventListener('click', function(e){
+              e.preventDefault();
+              set(ref(db, 'user/' + document.getElementById("username").value),
+              {
+   
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                PhoneNumber: document.getElementById("phone").value,
+                phone: document.getElementById("phone").value,
+                enquiry: document.getElementById("enquiry").value,
+                source: document.getElementById("source").value,
+                news: document.getElementById("news").value,
+                message: document.getElementById("message").value,
+
+              });
+                alert("Login Sucessfull  !");
+             })
+        </script>
+    </body>
+</html>
+
+<div class="row mb-4">
+    <div class="col">
+      <div class="form-group mt-2">
+      <label for="exampleFormControlInput1">Name</label>
+      <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
+      </div>
+        <div class="form-group mt-2">
+        <label for="exampleFormControlInput2">Email</label>
+        <input type="email" name="email"  class="form-control" id="exampleFormControlInput2" placeholder="Email Address" required>
+        </div>
+        <div class="form-group mt-2">
+        <label for="exampleFormControlInput3">Phone</label>
+        <input type="tel" name="phone"  class="form-control" id="exampleFormControlInput3" placeholder="Mobile" required>
+        </div>
+        <div class="form-group mt-2">
+        <label for="exampleFormControlSelect4">Type of enquiry</label>
+          <select class="form-control" name="enquiry"  id="exampleFormControlSelect4">
+            <option>Select...</option>
+            <option>Appointment Booking</option>
+            <option>Online Consultation</option>
+            <option>Private Home Enquiry</option>
+            <option>Commercial Enquiry</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group mt-2">
+          <label for="exampleFormControlSelect5">Source</label>
+          <select class="form-control" name="source"  id="exampleFormControlSelect5">
+            <option>Select...</option>
+            <option>Google</option>
+            <option>Houzz</option>
+            <option>Instagram</option>
+            <option>Pinterest</option>
+            <option>Facebook</option>
+            <option>Magazine</option>
+            <option>Newsletter</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group mt-2">
+          <label for="exampleFormControlSelect6">Newsletter</label>
+          <select class="form-control" name="news"  id="exampleFormControlSelect6">
+            <option>Select...</option>
+            <option>Yes, I would like to sign up!</option>
+            <option>No, don't sign me up.</option>
+          </select>
+        </div>
+        <div class="form-group mt-2">
+          <label for="exampleFormControlTextarea1">Message</label>
+          <textarea class="form-control" name="message"  id="exampleFormControlTextarea1" placeholder="Your Message" rows="3"
+            required></textarea>
+        </div>
+        <div class="form-group mt-2">
+          <input type="checkbox" name="terms" class="custom-control-input" id="customControlInline">
+          <label class="custom-control-label" for="customControlInline">I accept website terms</label>
+        </div>
+        <div class="form-group mt-2">
+          <input type="submit" value="submit" id="submit"  class="btn btn-secondary">
+           </div>
+      </form>

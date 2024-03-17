@@ -1,0 +1,393 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+/* Navbar */
+
+div.container-fluid,
+.bg-light,
+ul.dropdown-menu.show,
+div.modal-header,
+div.modal-footer {
+    background-color: #d4d0c8 !important;
+}
+
+.logo {
+    font-size: x-small;
+}
+
+span.logo {
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+}
+
+nav a {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+/* Font */
+
+body .headings,
+h4.text-center {
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+}
+
+.click-here {
+    color: #212529;
+}
+
+/* Landing Page - About */
+
+.about-image,
+.success-image {
+    max-width: 75%;
+    padding-left: 25%;
+}
+
+.index-about,
+.services-about {
+    max-width: 90%;
+    padding-left: 13%;
+}
+
+.services-about {
+    max-width: 90%;
+    padding-right: 13%;
+}
+
+img.img-fluid.aboiut-image.mt-5 {
+    vertical-align: middle;
+}
+
+/* Color for Covid banner */
+
+p.text-center.mt-5.mb-5 {
+    background-color: #bd9a99;
+}
+
+/* Portfolio */
+
+div#custom-carousel {
+    max-width: 70%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+}
+
+button#carousel {
+    padding: 12px 24px; /* Increase padding to increase button size */
+    color: rgb(98, 9, 9);
+    border: none;
+    text-decoration: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block; /* Change display to block */
+    margin: 0 auto; /* Center button horizontally */
+}
+
+
+span {
+    margin: auto;
+}
+
+
+/* Contact */
+
+form,
+body,
+div.modal-body {
+    background-color: #f9f8f7;
+}
+
+div.card-body {
+    background-color: #bd9a99;
+}
+
+form {
+    width: 90%;
+}
+
+/* Contact - Center Cards */
+
+div.card,
+div.form-group,
+form {
+    margin: auto;
+}
+
+div.form-group {
+    max-width: 70%;
+}
+
+/* Paint Circle Divs - Colour/Size */
+
+.paint-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 2%;
+}
+
+.paint-circle-white {
+    background-color: #eee9e7;
+}
+
+.paint-circle-beige {
+    background-color: #c5a808;
+}
+
+.paint-circle-brown {
+    background-color: #362000;
+}
+
+.paint-circle-greige {
+    background-color: #ddd8cf;
+}
+
+.paint-circle-mouse {
+    background-color: #a59f97;
+}
+
+.paint-circle-sage {
+    background-color: #bfc2b2;
+}
+
+.paint-circle-grey {
+    background-color: #d9d8d2;
+}
+
+.paint-circle-stone {
+    background-color: #8d8d8b;
+}
+
+.paint-circle-plaster {
+    background-color: #ccbeb2;
+}
+
+.paint-circle-mauve {
+    background-color: #9f9289;
+}
+
+.paint-circle-radish {
+    background-color: #5d3a42;
+}
+
+.paint-circle-citrus {
+    background-color: #d6c73c;
+}
+
+.paint-circle-apple {
+    background-color: #babba5;
+}
+
+.paint-circle-leaf {
+    background-color: #889080;
+}
+
+.paint-circle-denim {
+    background-color: #4d5b6a;
+}
+
+.paint-circle-purple {
+    background-color: #494248;
+}
+
+.paint-circle-cherry {
+    background-color: #a04344;
+}
+
+.paint-circle-blush {
+    background-color: #9f837f;
+}
+
+.paint-circle-sea {
+    background-color: #8a9c9b;
+}
+
+.paint-circle-coal {
+    background-color: #45484b;
+}
+
+/* 404 Error Page */
+
+.error-message {
+    background: black;
+    opacity: 0.7;
+}
+
+.error {
+    font-size: 25vw;
+    margin: 0;
+}
+
+.error-text {
+    font-size: 3vw;
+}
+
+/* Footer */
+
+a {
+    color: #212529;
+}
+
+footer {
+    background-color: #d4d0c8;
+    color: #212529;
+    padding: 1%;
+    bottom: 0;
+}
+
+/* Trasparent overlay to keep same convention for colors across the website instead of rgba */
+
+div.text-center.p-4 {
+    background-color: #00000010;
+}
+
+/* https://stackoverflow.com/questions/23201134/transparent-argb-hex-value#:~:text=Transparency%20is%20controlled%20by%20the,mixed%20with%20the%20background%20color. */
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 0 1%;
+    padding: 0 2%;
+    color: #212529;
+}
+
+.email-link {
+    color: #212529;
+}
+
+/* Scroll down feature over hero image Credit to Fiachra Holland */
+
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid #f9f8f7;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    -webkit-transform: translate(-50%, -100%) rotate(45deg);
+    -ms-transform: translate(-50%, -100%) rotate(45deg);
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid #f9f8f7;
+    border-top: transparent;
+    border-left: transparent;
+    -webkit-animation: scroll-down 1s ease-in-out infinite;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::before {
+    top: 30%;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+/* To remove showroom cards on tablet/mobile */
+
+@media (max-width: 480px) {
+    .showroom {
+        display: none;
+    }
+}
+
+/* To remove scroll icon on tablet/mobile */
+
+@media (max-width: 991px) {
+
+    .scroll-down,
+    .scroll-down::after,
+    .scroll-down::before,
+    div.scroll-down {
+        display: none;
+    }
+}
+
+/* To reduce amount of circles */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .paint-circle-sea.paint-circle,
+    .paint-circle-coal.paint-circle,
+    .headings19,
+    .headings20 {
+        display: none;
+    }
+}
+
+@media (min-width: 372px) and (max-width: 495px) {
+
+    .paint-circle-sea.paint-circle,
+    .paint-circle-coal.paint-circle,
+    .headings19,
+    .headings20 {
+        display: none;
+    }
+}
